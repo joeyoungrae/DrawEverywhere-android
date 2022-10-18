@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray">
+
+        <!-- 후에 실제로 캡쳐한 이미지로 변경 -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/prev_tutorial"
+            android:scaleType="centerCrop"/>
+
+
+        <!-- 상단 툴바 -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_top"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/color_toolbar_top">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_back"
+                android:padding="10dp"
+                android:layout_gravity="start"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btn_undo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_undo"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                app:tint="@color/white"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageView
+                android:id="@+id/btn_redo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_redo"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btn_finish"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_check"
+                android:layout_marginEnd="10dp"
+                android:padding="8dp"
+                android:layout_gravity="end"
+                app:tint="@color/white"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <!-- 하단 툴바 -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <CheckedTextView
+                android:id="@+id/btn_width"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:checkMark="@drawable/icon_line_width"
+                android:padding="8dp"
+                android:layout_gravity="start"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:checked="false"/>
+
+            <CheckedTextView
+                android:id="@+id/btn_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:checkMark="@drawable/icon_palette"
+                android:padding="8dp"
+                android:layout_gravity="start"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:checked="false"/>
+
+            <ImageView
+                android:id="@+id/btn_temp_save"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_download"
+                android:layout_marginEnd="10dp"
+                android:padding="8dp"
+                android:layout_gravity="end"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btn_get"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_import"
+                android:layout_marginEnd="5dp"
+                android:padding="8dp"
+                android:layout_gravity="end"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btn_clear"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/focus_view"
+                android:src="@drawable/icon_delete"
+                android:layout_marginEnd="10dp"
+                android:padding="8dp"
+                android:layout_gravity="end"
+                app:tint="@color/white"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

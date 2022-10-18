@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <com.google.android.exoplayer2.ui.StyledPlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:alpha="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:resize_mode="fill"
+        app:use_controller="false" />
+
+    <ImageView
+        android:id="@+id/iv_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@color/black"/>
+
+    <ImageView
+        android:id="@+id/btn_more"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/icon_more"
+        app:layout_constraintBottom_toTopOf="@+id/tv_place"
+        app:layout_constraintEnd_toEndOf="@+id/btn_place"
+        app:layout_constraintStart_toStartOf="@+id/btn_place"
+        app:tint="@color/white" />
+
+
+    <TextView
+        android:id="@+id/tv_place"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        app:drawableStartCompat="@drawable/icon_location"
+        app:drawableTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/pv_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/pv_profile"
+        tools:text="내집방구석" />
+
+    <com.draw.free.customView.ProfileView
+        android:id="@+id/pv_profile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_content" />
+
+    <TextView
+        android:id="@+id/tv_account_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_title"
+        app:layout_constraintStart_toEndOf="@+id/pv_profile"
+        app:layout_constraintTop_toTopOf="@+id/pv_profile"
+        tools:text="Seohyeoniii_" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/pv_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tv_account_id"
+        app:layout_constraintTop_toBottomOf="@+id/tv_account_id"
+        tools:text="더미데이터✅" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십"
+        tools:visibility="invisible" />
+
+    <!-- 핵 -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btn_go_to_mint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/playerView" />
+
+    <!-- NFT 마크 -->
+    <ImageView
+        android:id="@+id/nft_mark"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_round_edge_all"
+        android:backgroundTint="@color/blue"
+        android:padding="4dp"
+        android:src="@drawable/icon_nft"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/original_mark"
+        app:layout_constraintEnd_toEndOf="@+id/original_mark"
+        app:layout_constraintStart_toStartOf="@+id/original_mark"
+        app:tint="@color/white"
+        tools:visibility="invisible" />
+
+
+
+
+    <!-- NFT 발행버튼 -->
+    <LinearLayout
+        android:id="@+id/btn_go_to_mint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/original_mark"
+        app:layout_constraintEnd_toEndOf="@+id/btn_place"
+        app:layout_constraintStart_toStartOf="@+id/btn_place">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_go"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mint_nft"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+    <!-- 오리지널 그림 마크 -->
+    <LinearLayout
+        android:id="@+id/original_mark"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_round_edge_all"
+        android:backgroundTint="@color/light_red"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_position"
+        app:layout_constraintEnd_toEndOf="@+id/btn_place"
+        app:layout_constraintStart_toStartOf="@+id/btn_place"
+        tools:visibility="invisible">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_verified"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/is_original"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btn_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/btn_place"
+        app:layout_constraintBottom_toTopOf="@+id/btn_place"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/icon_map"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/position_draw"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            android:gravity="center"
+            tools:ignore="SmallSp" />
+    </LinearLayout>
+
+
+    <!-- 배치버튼 -->
+    <LinearLayout
+        android:id="@+id/btn_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btn_like"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/icon_focus"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_drawing"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+    <!-- 좋아요 버튼 -->
+    <LinearLayout
+        android:id="@+id/btn_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btn_comment"
+        app:layout_constraintEnd_toEndOf="@+id/btn_place"
+        app:layout_constraintStart_toStartOf="@+id/btn_place">
+
+        <ImageView
+            android:id="@+id/btn_like_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/like_selector" />
+
+        <TextView
+            android:id="@+id/cnt_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            tools:text="3.5k" />
+
+    </LinearLayout>
+
+    <!-- 댓글 버튼 -->
+    <LinearLayout
+        android:id="@+id/btn_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btn_more"
+        app:layout_constraintEnd_toEndOf="@+id/btn_place"
+        app:layout_constraintStart_toStartOf="@+id/btn_place">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_comment"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/cnt_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            tools:text="3.5k" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/volume_control"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:alpha="0"
+        android:animateLayoutChanges="true"
+        android:src="@drawable/icon_volume_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

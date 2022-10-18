@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.draw.free.viewmodel.ProfileEditFragmentViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/btn_cancel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="@{() -> viewmodel.onCancelEdit()}"
+                android:src="@drawable/icon_back"
+                android:padding="10dp"
+                android:layout_gravity="start"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/edit_profile"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/btn_save_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:onClick="@{() -> viewmodel.onCompleteEdit()}"
+                android:src="@drawable/icon_check"
+                android:padding="8dp"
+                android:layout_gravity="end"
+                app:tint="@color/blue_green" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.draw.free.customView.ProfileView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="125dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <TextView
+            android:id="@+id/tv_change_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/change_profile_image"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <!-- account_id 변경 -->
+        <LinearLayout
+            android:id="@+id/accountIdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/tv_change_profile"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/account_id"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/et_account_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:hint="@string/account_id_hint"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:singleLine="true"
+                android:text="@={viewmodel.mAccountId}"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <!-- pf_name 변경 -->
+        <LinearLayout
+            android:id="@+id/pfNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/accountIdLayout"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/pf_name"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="@string/pf_name_hint"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:text="@={viewmodel.mNickname}"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                tools:ignore="RtlSymmetry"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <!-- pf_description 변경 -->
+        <LinearLayout
+            android:id="@+id/pfDescLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/pfNameLayout"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:text="@string/pf_desc"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/et_description"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="@string/pf_desc_hint"
+                android:inputType="textMultiLine"
+                android:textSize="14sp"
+                android:text="@={viewmodel.mDescription}"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

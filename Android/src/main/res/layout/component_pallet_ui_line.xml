@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ui_line"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:padding="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_line_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/line_size"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:progress="35"
+            android:progressDrawable="@drawable/seekbar"
+            android:thumb="@drawable/seekbar_thumb"
+            app:layout_constraintTop_toBottomOf="@+id/txt_line_size" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt_line_type"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="@string/line_type"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/txt_line_size"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/seekBar" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_default"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:backgroundTint="@color/selected"-->
+<!--            android:text="기본형"-->
+<!--            app:layout_constraintStart_toStartOf="@id/txt_line_type"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/txt_line_type" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_scribble"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:backgroundTint="@color/unselected"-->
+<!--            android:text="휘감기"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/btn_default"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/btn_default" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <!-- 상태 레이아웃 -->
+        <LinearLayout
+            android:id="@+id/statusLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <!-- @color/s_red -->
+            <TextView
+                android:id="@+id/all"
+                android:textSize="13sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/status_all"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:background="@drawable/shape_round_status_border"
+                android:backgroundTint="@color/s_red"
+                tools:ignore="SmallSp"
+                android:layout_marginEnd="5dp"
+                android:visibility="visible"
+                android:gravity="center"/>
+
+            <!-- @color/s_blue -->
+            <TextView
+                android:id="@+id/on_sale"
+                android:textSize="13sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/status_on_sale"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:background="@drawable/shape_round_status_border"
+                tools:ignore="SmallSp"
+                android:layout_marginEnd="5dp"
+                android:visibility="visible"
+                android:gravity="center"/>
+
+            <!-- @color/s_gray -->
+            <TextView
+                android:id="@+id/ended_sale"
+                android:textSize="13sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/status_ended_sale"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:background="@drawable/shape_round_status_border"
+                tools:ignore="SmallSp"
+                android:layout_marginEnd="5dp"
+                android:visibility="visible"
+                android:gravity="center"/>
+
+            <!-- @color/s_green -->
+            <TextView
+                android:id="@+id/sold"
+                android:textSize="13sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/status_sold"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:background="@drawable/shape_round_status_border"
+                tools:ignore="SmallSp"
+                android:visibility="visible"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

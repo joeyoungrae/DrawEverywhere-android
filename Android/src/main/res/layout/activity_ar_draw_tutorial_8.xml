@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray">
+
+        <!-- 후에 실제로 캡쳐한 이미지로 변경 -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/prev_tutorial"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!-- 상단 툴바 -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_top"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/color_toolbar_top"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:padding="10dp"
+                android:src="@drawable/icon_back"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btn_undo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:src="@drawable/icon_undo"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btn_redo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/icon_redo"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btn_finish"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:padding="8dp"
+                android:src="@drawable/icon_check"
+                app:tint="@color/white" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <!-- 하단 툴바 -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <CheckedTextView
+                android:id="@+id/btn_width"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:layout_marginEnd="10dp"
+                android:checkMark="@drawable/icon_line_width"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="8dp" />
+
+            <CheckedTextView
+                android:id="@+id/btn_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/focus_view"
+                android:checkMark="@drawable/icon_palette"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/btn_temp_save"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:padding="8dp"
+                android:src="@drawable/icon_download"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btn_get"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="5dp"
+                android:padding="8dp"
+                android:src="@drawable/icon_import"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btn_clear"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:padding="8dp"
+                android:src="@drawable/icon_delete"
+                app:tint="@color/white" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!--<include
+            android:id="@+id/ui_color"
+            layout="@layout/component_pallet_ui_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/toolbar_bottom"/>-->
+
+
+        <LinearLayout
+            android:id="@+id/ui_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@id/toolbar_bottom">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.flask.colorpicker.ColorPickerView
+                    android:id="@+id/color_picker_view"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:_alphaSlider="false"
+                    app:_density="5"
+                    android:enabled ="false"
+                    app:_lightnessSlider="false"
+                    app:_wheelType="CIRCLE"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cardColor1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardColor1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintEnd_toStartOf="@+id/cardColor2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/color_picker_view"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/color1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray" />
+
+
+                    <ImageView
+                        android:id="@+id/color1_edge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edge_circle"
+                        android:visibility="invisible" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardColor2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_more_color"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/cardColor1"
+                    app:layout_constraintTop_toTopOf="@+id/cardColor1">
+
+                    <ImageView
+                        android:id="@+id/color2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray" />
+
+                    <ImageView
+                        android:id="@+id/color2_edge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edge_circle"
+                        android:visibility="invisible" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardColor3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/cardColor1"
+                    app:layout_constraintTop_toBottomOf="@+id/cardColor1">
+
+                    <ImageView
+                        android:id="@+id/color3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray" />
+
+                    <ImageView
+                        android:id="@+id/color3_edge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edge_circle"
+                        android:visibility="invisible" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardColor4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/cardColor2"
+                    app:layout_constraintTop_toBottomOf="@+id/cardColor2">
+
+                    <ImageView
+                        android:id="@+id/color4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray" />
+
+                    <ImageView
+                        android:id="@+id/color4_edge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edge_circle"
+                        android:visibility="invisible" />
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- 색깔 더보기 버튼 -->
+                <ImageView
+                    android:id="@+id/btn_more_color"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_palette"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/cardColor2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/txt_more_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more_color"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/btn_more_color"
+                    app:layout_constraintStart_toStartOf="@+id/btn_more_color"
+                    app:layout_constraintTop_toBottomOf="@id/btn_more_color" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

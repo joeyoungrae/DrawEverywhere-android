@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gom="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/btn_home"
+        android:title="@string/home_tab"
+        android:icon="@drawable/icon_home" />
+    <item android:id="@+id/btn_nft"
+        android:title="@string/nft_tab"
+        android:icon="@drawable/icon_nft_collection" />
+    <item
+        android:title=""
+        gom:showAsAction="never"/>
+    <item android:id="@+id/btn_search"
+        android:title="@string/search_tab"
+        android:icon="@drawable/icon_search" />
+    <item android:id="@+id/btn_profile"
+        android:title="@string/profile_tab"
+        android:icon="@drawable/icon_profile" />
+</menu>

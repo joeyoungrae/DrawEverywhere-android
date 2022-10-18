@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="trans">#00FFFFFF</color>
+
+    <color name="light">#FFF0F0F0</color>
+
+
+    <!-- 알록달록 컬러 -->
+    <color name="peach">#FFF77B5F</color>
+    <color name="bright_green">#FF17BC6F</color>
+    <color name="blue_green">#FF56D2C4</color>
+    <color name="bright_blue">#FF82D7EC</color>
+    <color name="yellow">#FFFAE53A</color>
+    <color name="bright_purple">#FFCBB8E6</color>
+    <color name="purple">#FF7F6EB4</color>
+    <color name="baby_pink">#FFF8BECD</color>
+    <color name="orange">#FFFFBC45</color>
+    <color name="blue">#FF556FDE</color>
+    <color name="select_icon">#8F8F8F</color>
+
+    <color name="light_red">#FF5C5C</color>
+
+    <!-- 비밀번호 입력 레이아웃 컬러 -->
+    <color name="navy">#091235</color>
+    <color name="super_dark_gray">#181818</color>
+    <color name="medium_dark_gray">#222222</color>
+    <color name="light_dark_gray">#545454</color>
+
+
+    <color name="progress_bg">#80FFFFFF</color>
+
+    <!-- status background 컬러 -->
+    <color name="s_green">#DBEDDB</color>
+    <color name="s_red">#FFE2DD</color>
+    <color name="s_purple">#E8DEEE</color>
+    <color name="s_orange">#FDECC8</color>
+    <color name="s_gray">#E3E2E0</color>
+    <color name="s_pink">#F5E0E9</color>
+    <color name="s_blue">#D3E5EF</color>
+
+    <!-- Custom 컬러 -->
+    <color name="btnNext">#FF1ABC9C</color>
+    <color name="deepOrange">#FFf22213</color>
+    <color name="negative">#FFFF3333</color>
+    <color name="gray">#FFE0E0E0</color>
+    <color name="grayTranslate">#80E0E0E0</color>
+    <color name="black_trans">#FFB0B0B0</color>
+    <color name="background">#FFE7E7E7</color>
+
+
+    <color name="selected">#FFECC270</color>
+    <color name="unselected">#FF839EA7</color>
+
+    <color name="blackTrans">#50000000</color>
+    <color name="blackTrans2">#30000000</color>
+
+    <color name="normal">#E0000000</color>
+    <color name="focus">#80000000</color>
+    <color name="def">#50000000</color>
+
+    <color name="dark_gray">#50333333</color>
+    <color name="solid_dark_gray">#FF909090</color>
+
+
+    <!-- 배경색-->
+    <color name="bg_screen">@color/gray</color>
+
+    <!-- 선택되지 않은 점(선택 되지 않은 페이지 점) -->
+    <color name="dot_dark_screen">@color/white</color>
+
+    <!-- 선택된 점(해당 페이지 일 때) -->
+    <color name="dot_light_screen">@color/unselected</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen</item>
+    </array>
+
+
+</resources>

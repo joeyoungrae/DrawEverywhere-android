@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?><!-- language 한글 버전인 경우 -->
+<resources>
+    <!-- 서비스 명 -->
+    <string name="app_name">Draw Everywhere</string>
+    <string name="draw_everywhere">DRAW EVERYWHERE</string>
+    <string name="powered_by">Powered by DRAW EVERYWHERE</string>
+
+
+    <!-- 서비스 키 TODO: 후에 비공개 처리해야 함 -->
+    <string name="url_check">"https://github.com/godyoung12/asdf/blob/main/123"</string>
+    <string name="method">GET</string>
+
+
+
+    <!-- Tab Name -->
+    <string name="home_tab">Home</string>
+    <string name="nft_tab">NFT</string>
+    <string name="drawing_tab">AR Drawing</string>
+    <string name="search_tab">Search</string>
+    <string name="profile_tab">Profile</string>
+
+
+    <!-- Home Tab String -->
+    <string name="hash">#</string>
+    <string name="likes">❤</string>
+    <string name="trending_drawings">인기있는 그림 ✨</string>
+    <string name="liked_posts">좋아요가 많은 포스트 💘</string>
+    <string name="recently_minted">최근 NFT로 발행된 그림 ✌</string>
+    <string name="best_wallets">가장 많은 NFT를 가지고있는 지갑 😎</string>
+    <string name="star_users">추천 드로어 🦄</string>
+
+    <!-- NFT Tab String -->
+    <string name="all_auction">전체 Auction 💎</string>
+    <string name="started_auction">진행중인 Auction 💎</string>
+    <string name="canceled_auction">취소된 Auction 💎</string>
+    <string name="ended_auction">완료된 Auction 💎</string>
+    <string name="filter_ok">적용</string>
+
+    <!-- auction -->
+    <string-array name="planets_array">
+        <item>@string/type_all</item>
+        <item>@string/status_on_sale</item>
+        <item>@string/status_ended_sale</item>
+        <item>@string/status_sold</item>
+    </string-array>
+
+
+    <!-- AR Drawing Tab String -->
+    <string name="notice_recording">그림 저장을 위해서는 녹화가 필요합니다.\n터치를 누르면 녹화가 시작됩니다.</string>
+    <string name="notice_turn_around">그림 그릴 장소를 찾고있습니다 \n주변을 비추어 주세요</string>
+    <string name="line_size">두께</string>
+    <string name="line_type">타입</string>
+    <string name="more_color">색상더보기</string>
+    <string name="upload_drawing">드로잉 등록</string>
+    <string name="edit_drawing">드로잉 수정</string>
+    <string name="remove_drawing">드로잉 삭제</string>
+    <string name="finish">완료</string>
+    <string name="title_hint">제목을 입력해주세요</string>
+    <string name="content_hint">드로잉을 설명해주세요:)</string>
+    <string name="place_hint">드로잉을 그린 위치를 입력해주세요!</string>
+    <string name="notice_place">지도를 길게 클릭하여 그림을 그린 위치를 마커로 표시하고, 위치명을 자유롭게 적어주세요!</string>
+    <string name="set_closed">비공개 설정</string>
+    <string name="check_video">영상 확인</string>
+    <string name="preview">프리뷰</string>
+    <string name="reposition">재배치</string>
+
+
+    <!-- AR Post Dialog -->
+    <string name="post_declaration">포스트 신고하기</string>
+    <string name="post_remove">포스트 삭제하기</string>
+    <string name="post_edit">포스트 수정하기</string>
+    <string name="post_position">드로잉 그린 위치</string>
+    <string name="user_declaration">유저 신고하기</string>
+
+    <!-- Search Tab String -->
+    <string name="search_category">포스트 제목, 해시태그, 유저 계정 id, 유저 이름으로 검색</string>
+    <string name="hashtag">해시태그</string>
+    <string name="search_title">제목</string>
+    <string name="search_user">계정</string>
+    <string name="search_tag">태그</string>
+    <string name="status_all">전체</string>
+
+
+    <!-- Profile Tab String -->
+    <string name="follower">팔로워</string>
+    <string name="following">팔로잉</string>
+    <string name="edit_profile">프로필 수정</string>
+    <string name="follow">팔로우</string>
+    <string name="cancel_request_follow">팔로우 신청 취소</string>
+    <string name="unfollow">팔로우 취소</string>
+    <string name="unfollowRequest">팔로우 신청 취소</string>
+    <string name="notice_private_account">비공개 계정입니다</string>
+    <string name="notice_zero_post">포스트가 없습니다</string>
+    <string name="notice_zero_follower">팔로우가 없습니다</string>
+    <string name="notice_zero_following">팔로잉이 없습니다</string>
+
+
+    <string name="notice_zero_search">검색 결과가 없습니다</string>
+
+    <string name="pf_name">이름</string>
+    <string name="pf_desc">소개</string>
+    <string name="account_id">계정 아이디</string>
+    <string name="pf_name_hint">이름 (최대 15자)</string>
+    <string name="pf_desc_hint">소개 (최대 150자)</string>
+    <string name="account_id_hint">계정 아이디 (최대 30자)</string>
+    <string name="nft_wallet">NFT 지갑🪙</string>
+    <string name="solana_wallet">Solana Wallet</string>
+    <string name="sol">SOL</string>
+    <string name="owned_nft">소유한</string>
+    <string name="minted_nft">발행한</string>
+    <string name="my_auction">판매한</string>
+    <string name="notice_zero_nft">NFT가 없습니다</string>
+    <string name="notice_zero_auction">판매 히스토리가 없습니다</string>
+    <string name="change_wallet_password">지갑 비밀번호 변경</string>
+    <string name="see_wallet_secret_key">비공개키 내보내기</string>
+    <string name="see_wallet_seed_phrase">시드 구문 확인하기</string>
+    <string name="notice_put_password">지갑 비밀번호를 입력해주세요</string>
+    <string name="notice_secret_key">해당 비공개키를 누구와도 공유하지 마세요!\n지갑이 도용될 수 있습니다.</string>
+    <string name="notice_seed_phrase">시드 구문(12개의 단어)는 지갑을 복원할 때 사용됩니다.\n해당 시드 구문은 서버에 저장되지 않아 복구할 수 없으므로 절대 잊어버리지 마세요.</string>
+
+    <string name="wallet_secret_key">지갑 시크릿 키</string>
+    <string name="wallet_seed_phrase">지갑 시드 구문 (단어 12개)</string>
+    <string name="notice_register_wallet">지갑 활성화를 위해\n정보를 입력해주세요.</string>
+    <string name="notice_restore_wallet">지갑 복구를 위해\n시드 문구를 입력해주세요.</string>
+    <string name="notice_wallet_active">입력하신 비밀번호는 거래 및 지갑을 사용할 때\n필요합니다.</string>
+    <string name="notice_wallet_restore">12개 단어의 복구용 시드 구문으로 솔라나 지갑을 복구합니다.\n단어 사이는 띄어쓰기로 구분해주세요</string>
+
+
+    <!-- DetailedPost String -->
+    <string name="delete">삭제하기</string>
+    <string name="posts">게시물</string>
+    <string name="comments">댓글</string>
+    <string name="view_drawing">배치</string>
+    <string name="mint_nft">NFT발행</string>
+    <string name="notice_delete_confirm">정말로 삭제할까요?</string>
+    <string name="notice_zero_comment">댓글이 없습니다</string>
+    <string name="comment_hint">댓글을 입력해 주세요</string>
+    <string name="position_draw">그린 위치</string>
+
+
+    <!-- 회원가입 -->
+    <string name="register">회원가입</string>
+    <string name="notice_account_id">사용하실 계정 아이디를 입력해주세요</string>
+    <string name="notice_account_id_desc">영어 소문자와 언더바(_), 숫자를 사용할 수 있습니다!</string>
+    <string name="wallet_pw">지갑 비밀번호</string>
+    <string name="wallet_pw_chk">비밀번호 확인</string>
+    <string name="notice_wallet_pw">솔라나 지갑 비밀번호를 설정해주세요</string>
+    <string name="notice_wallet_pw_desc">해당 비밀번호는 nft 관련 결제 시 사용됩니다\n비밀번호를 잊어버리면 지갑을 사용할 수 없으니 주의해주세요!</string>
+    <string name="next">다음</string>
+    <string name="skip">건너뛰기</string>
+
+
+    <!-- NFT 발행 / 판매 / 구매 -->
+    <string name="mint__nft">NFT 발행</string>
+    <string name="nft_detail">NFT 상세정보</string>
+    <string name="buy_nft">NFT 구매</string>
+    <string name="sell_nft">NFT 판매</string>
+    <string name="end_sale">NFT 판매 취소</string>
+    <string name="settle_bill">NFT 판매 정산</string>
+    <string name="nft_title">Title</string>
+    <string name="hint_nft_title">NFT 제목을 입력해주세요 (한글 최대 10자, 영어 최대 32자)</string>
+    <string name="nft_symbol">Symbol</string>
+    <string name="hint_nft_symbol">NFT를 짧은 단어로 표현해주세요! (한글 최대 3자, 영어 최대 10자)</string>
+    <string name="nft_desc">Description</string>
+    <string name="hint_nft_desc">내 NFT를 소개해주세요:) (최대 100자)</string>
+    <string name="nft_creator_fee">Creator Fee</string>
+    <string name="percent">%</string>
+    <string name="notice_creator_fee">NFT가 재판매될 때마다 해당 퍼센트만큼의 판매 수수료가 나의 지갑에 들어와요!\n(최대 50%, 소수점 이하 2자리까지 가능)</string>
+    <string name="hint_nft_creator_fee">00.00</string>
+    <string name="nft_preview">미리보기</string>
+    <string name="mint">발행</string>
+    <string name="cost">예상 비용</string>
+    <string name="sol_mark">◎</string>
+    <string name="my_wallet">내 지갑</string>
+    <string name="balance">잔액</string>
+    <string name="cancel">취소</string>
+    <string name="enter_password">비밀번호 입력</string>
+    <string name="notice_enter_password">결제를 위해\n지갑 비밀번호를 입력해주세요</string>
+    <string name="notice_long">최대 길이를 초과했어요😨</string>
+    <string name="notice_empty">필수 항목입니다! 내용을 입력해주세요🙂</string>
+    <string name="only_number">숫자만 입력 가능합니다🤨</string>
+    <string name="fee_range">0부터 최대 50%까지 가능합니다😅</string>
+    <string name="fee_decimal">최대 소수점 아래 2자리까지 가능해요😅</string>
+    <string name="notice_check_again">입력 내용을 다시 확인해주세요🤔</string>
+    <string name="notice_minting">NFT를 발행 중입니다! 잠시만 기다려주세요</string>
+    <string name="notice_minting_success">NFT가 발행되었습니다!</string>
+    <string name="notice_selling">NFT를 판매 등록하는 중입니다! 잠시만 기다려주세요</string>
+    <string name="notice_selling_success">NFT 판매 등록이 완료되었습니다!</string>
+    <string name="notice_buying">NFT를 구매하는 중입니다! 잠시만 기다려주세요</string>
+    <string name="notice_buying_success">NFT를 구매하였습니다!</string>
+    <string name="notice_nft_failed">처리에 실패했습니다 잠시 후 다시 시도해주세요.</string>
+
+    <string name="notice_end_sale">NFT를 판매 취소하는 중입니다! 잠시만 기다려주세요</string>
+    <string name="notice_end_sale_success">NFT 판매 취소가 완료되었습니다!</string>
+    <string name="notice_settling">정산받는 중입니다! 잠시만 기다려주세요</string>
+    <string name="notice_settling_success">정산이 완료되었습니다!</string>
+    <string name="notice_time_2">최대 2분정도 소요될 수 있습니다</string>
+    <string name="notice_time_3">최대 3분정도 소요될 수 있습니다</string>
+    <string name="creators">Creators</string>
+    <string name="owner">Owner</string>
+    <string name="auctioneer">Auctioneer</string>
+    <string name="buyer">Buyer</string>
+    <string name="address">Address</string>
+    <string name="holder">Holder Address</string>
+    <string name="update_authority">Update Authority</string>
+    <string name="seller_fee_basis_points">Seller Fee Basis Points</string>
+    <string name="uri">Uri</string>
+    <string name="created_at">Created At</string>
+    <string name="nft_price">Price</string>
+    <string name="notice_price">NFT의 판매 가격을 입력해주세요! (소수점 이하 9자리까지 가능)</string>
+    <string name="hint_price">0.123456789</string>
+    <string name="price_empty_notice">판매 가격을 입력해주세요😀</string>
+    <string name="not_number_format_notice">잘못된 숫자 형식입니다🤔</string>
+    <string name="price_not_in_range_notice">판매 가격은 0 SOL 보다 커야해요🤨</string>
+    <string name="price_wrong_decimal_notice">판매 가격은 최대 소수점 아래 9자리까지 가능해요😅</string>
+    <string name="not_enough_balance_notice">지갑 잔액이 부족합니다😭</string>
+    <string name="wait_until_getting_cost_and_balance_notice">예상 비용과 지갑 잔액을 확인하는 중입니다🤓</string>
+    <string name="status_on_sale">판매중</string>
+    <string name="status_ended_sale">판매취소</string>
+    <string name="status_sold">판매완료</string>
+    <string name="status_not_settled">정산필요</string>
+    <string name="status_settled">정산완료</string>
+    <string name="nft">NFT</string>
+    <string name="auction">Auction</string>
+    <string name="is_on_sale">현재판매중</string>
+    <string name="is_original">원본그림</string>
+
+    <string name="type_all">전체</string>
+
+    <!-- 설정 화면 -->
+    <string name="setting">설정</string>
+    <string name="notification">알림</string>
+    <string name="set_privacy">개인정보 보호</string>
+    <string name="terms">이용약관</string>
+    <string name="personal_info">개인정보 처리방침</string>
+    <string name="send_inquiry">문의하기</string>
+    <string name="license">오픈소스 라이선스</string>
+
+    <!-- 알림 화면 -->
+    <string name="accept">수락</string>
+    <string name="refuse">거절</string>
+    <string name="follow_request_message">%s 님이 팔로우를 요청했습니다.</string>
+
+    <!-- 개인 정보 보호 화면 -->
+    <string name="setting_privacy_title">개인정보 보호</string>
+    <string name="item_set_account_privacy">계정 공개 범위</string>
+    <string name="item_name_account_privacy">비공개 계정</string>
+    <string name="change_private_account_type">비공개 계정으로 전환하시겠어요?</string>
+    <string name="change_public_account_type">공개 계정으로 전환하시겠어요?</string>
+    <string name="description_private_account_type">다음 요소들이 회원님의 팔로워에게만 공개됩니다.</string>
+    <string name="description_public_account_type">다음 요소들이 모두에게 공개됩니다.</string>
+    <string name="element_account_type">▪ 회원님이 쓴 포스트\n▪ 좋아요 한 포스트\n▪ 회원님의 팔로우 리스트\n▪ 회원님의 팔로워 리스트</string>
+    <string name="button_private_dialog">전환하기</string>
+
+    <!-- key && value -->
+    <string name="type">type</string>
+    <string name="key_accountID">account_id</string>
+    <string name="key_email">email</string>
+    <string name="key_phone">phone</string>
+    <string name="key_password">password</string>
+
+
+    <!-- Button List -->
+    <string name="login">로그인</string>
+    <string name="secession">회원탈퇴</string>
+    <string name="logout">로그아웃</string>
+    <string name="signUp">회원가입</string>
+
+
+    <!-- Normal String -->
+    <string name="view_email_resend"><u>이메일 재전송</u></string>
+    <string name="view_detail_link"><u>자세히 보기</u></string>
+
+
+    <string name="defaultLoadingMsg">로딩중...</string>
+    <string name="waitLogin">로그인 중입니다.</string>
+    <string name="accountId">계정 아이디</string>
+    <string name="email">이메일</string>
+    <string name="password">비밀번호</string>
+    <string name="find_PW"><u>비밀번호 찾기</u></string>
+    <string name="key_previousStack">previousStack</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_profile_image">프로필 사진 바꾸기</string>
+
+    <!-- 설명 -->
+    <array name="array_description_tutorial_draw">
+        <item>그림그리기를 실행 할 경우, 다음화면이 나타납니다.\n카메라로 주변을 비추어 현재 장소를 인식시켜주면 그리기로 넘아갈 수 있습니다.</item>
+        <item>뒤로가기 입니다.\n그림 그리기 화면을 빠져나갈 수 있습니다.\n현재까지 그린 그림이 사라지니 주의해주세요.</item>
+        <item>되돌리기 및 복원 입니다.\n마지막 선을 지우거나 복원할 수 있습니다.\n단 전체 삭제시 히스토리도 함께 삭제됩니다.</item>
+        <item>저장 기능입니다.\n현재까지 그린 그림을 업로드하여 타인과 공유하거나 NFT로 만들 수 있습니다.\n이를 위해서 동영상 녹화 화면으로 넘어갑니다.</item>
+        <item>삭제 기능입니다.\n현재까지 그린 그림을 전부 지웁니다.\n사용시 다시 되돌릴 수 없으니 주의해주세요.</item>
+        <item>불러오기 기능입니다.\n임시저장한 데이터가 있을 경우 불러옵니다.\n이때, 기존에 그린 그림은 사라지게 되니 주의해주세요.</item>
+        <item>임시저장 기능입니다.\n지금 그린 그림을 기기에 임시저장합니다.\n서버에 업로드 되지 않아\n데이터 소실시 복구할 수 없습니다.</item>
+        <item>선 두께 설정 UI 보이기, 감추기 기능입니다.\n버튼 상단의 UI에서 선 두께를 바꿀 수 있습니다.</item>
+        <item>색상 선택 UI 보이기, 감추기 기능입니다.\n버튼 상단의 UI에서 색깔을 바꿀 수 있습니다.\n색상 더보기를 통해 더 많은 색상을 사용할 수 있습니다.</item>
+    </array>
+
+
+
+
+    <!-- Dialog -->
+    <string name="ok">확인</string>
+</resources>

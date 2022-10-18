@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="1.5dp" android:color="@color/white"/>
+            <size android:width="50dp" android:height="48dp"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:drawable="@drawable/icon_check"/>
+</layer-list>
+
+<!--
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <stroke android:width="5dp" android:color="@color/black"/>
+    <size android:width="48dp" android:height="48dp"/>
+</shape>-->

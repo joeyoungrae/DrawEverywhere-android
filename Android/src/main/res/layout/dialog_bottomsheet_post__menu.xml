@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        style="@style/CustomBottomSheet"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/BottomSheetItem"
+            android:drawableStart="@drawable/icon_edit"
+            android:text="@string/post_edit"
+            app:layout_constraintBottom_toTopOf="@+id/item_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/BottomSheetItem"
+            android:drawableStart="@drawable/icon_delete"
+            android:text="@string/post_remove"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_edit" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_declaration_post"
+            style="@style/BottomSheetItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_warning"
+            android:text="@string/post_declaration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_delete" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_declaration_user"
+            style="@style/BottomSheetItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_warning"
+            android:text="@string/user_declaration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_declaration_post" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
